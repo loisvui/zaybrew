@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pour List — Add a Recipe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <p class="wordmark">The Pour List</p>
+      <nav class="site-nav">
+        <a href="index.html">Catalog</a>
+        <a href="create.html" class="active">Add a recipe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="create-section">
+      <div class="section-heading">
+        <h2>Add a recipe</h2>
+        <p class="count">Saved to this browser</p>
+      </div>
+
+      <p class="form-status" hidden></p>
+
+      <form class="recipe-form">
+        <div class="field-row">
+          <label for="recipe-name">Recipe name</label>
+          <input type="text" id="recipe-name" name="recipe-name" placeholder="e.g. Cinnamon Cortado">
+        </div>
+
+        <div class="field-row two-col">
+          <div>
+            <label for="recipe-brand">Brand / roaster</label>
+            <input type="text" id="recipe-brand" name="recipe-brand" placeholder="e.g. Intelligentsia">
+          </div>
+          <div>
+            <label for="recipe-type">Type</label>
+            <select id="recipe-type" name="recipe-type">
+              <option value="milk">Milk drink</option>
+              <option value="black">Black coffee</option>
+              <option value="cold">Cold brew</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <label>Ingredients</label>
+          <div class="ingredient-inputs">
+            <div class="ingredient-row">
+              <input type="text" placeholder="Ingredient name" class="ingredient-name">
+              <input type="text" placeholder="Amount" class="ingredient-amount">
+              <button type="button" class="remove-ingredient-btn" aria-label="Remove ingredient">×</button>
+            </div>
+          </div>
+          <button type="button" class="add-ingredient-btn">+ Add ingredient</button>
+        </div>
+
+        <div class="field-row">
+          <label for="recipe-steps">Steps</label>
+          <textarea id="recipe-steps" name="recipe-steps" rows="4" placeholder="One step per line"></textarea>
+        </div>
+
+        <div class="field-row">
+          <label for="recipe-note">Note (optional)</label>
+          <input type="text" id="recipe-note" name="recipe-note" placeholder="e.g. Shake the oat milk first">
+        </div>
+
+        <button type="submit" class="submit-btn">Save recipe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>The Pour List — a personal recipe catalog.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="create.js"></script>
+</body>
+</html>

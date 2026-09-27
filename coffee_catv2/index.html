@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pour List — Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <p class="wordmark">The Pour List</p>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Catalog</a>
+        <a href="create.html">Add a recipe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="intro">
+      <h1>Recipes worth remembering.</h1>
+      <p>Every drink I've dialed in, with the exact beans, ratios, and steps — so I never have to guess twice.</p>
+    </section>
+
+    <section class="catalog-section">
+      <div class="section-heading">
+        <h2>Catalog</h2>
+        <p class="count">0 recipes</p>
+      </div>
+
+      <!-- Filled in by catalog.js on page load -->
+      <div class="catalog-grid"></div>
+
+      <p class="empty-state" hidden>
+        No recipes yet. <a href="create.html">Add your first one</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>The Pour List — a personal recipe catalog.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>
